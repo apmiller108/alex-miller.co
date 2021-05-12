@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:400,600');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+$bp-tablet: 768px;
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Hind', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+h1 {
+  font-weight: bold;
+  font-size: 4.8rem;
+  color: #0478CB;
+}
+h2 {
+  color: #383D3B;
+}
+p {
+  color: #383D3B;
+  font-size: 1.8rem;
+}
+a {
+  font-size: 1.8rem;
+}
+.initials {
+  font-family: 'Press Start 2P', cursive, sans-serif;
+  font-size: 4.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #383D3B;
+  &:hover {
+    color: #0478CB;
+  }
+}
+.employer-link {
+  color: #ed7451;
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    margin-top: 10%;
+  }
+}
+.intro p .link {
+  color: #0478CB;
+}
+.intro p .link:hover {
+  color: #F4442E;
+}
+
+.name {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.name-container div {
+  letter-spacing: 15px;
+}
+.initials-container {
+  letter-spacing: 15px;
+}
+.initials-container .front span:nth-child(1) {
+  color: #0478CB;
+}
+.initials-container .front span:nth-child(2) {
+  color: #F4442E;
+}
+
+/* Initials animation */
+.polygons {
+  margin: 0 auto;
+  max-width: 500px;
+  height: 200px;
+  position: relative;
+}
+.polygons div {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  top: 0;
+  left: 0;
+  transition: 0.7s cubic-bezier(0.52, 0.01, 0.16, 1);
+}
+.polygons div:nth-child(1) {
+  transition-delay: 0.3s;
+  transition-duration: 0.55s;
+}
+.polygons div:nth-child(2) {
+  transition-delay: 0.4s;
+  transition-duration: 0.6s;
+}
+.polygons div:nth-child(3) {
+  transition-delay: 0.5s;
+  transition-duration: 0.65s;
+}
+.polygons div:nth-child(4) {
+  transition-delay: 0.6s;
+  transition-duration: 0.7s;
+}
+.polygons div:nth-child(1) {
+  -webkit-clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
+  -ms-clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
+  -moz-clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
+  clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
+  background-color: #0478CB;
+}
+.polygons div:nth-child(2) {
+  -webkit-clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
+  -ms-clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
+  -moz-clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
+  clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
+  background-color: #0478CB;
+  opacity: 0.8;
+}
+.polygons div:nth-child(3) {
+  -webkit-clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
+  -ms-clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
+  -moz-clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
+  clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
+  background-color: #F4442E;
+}
+.polygons div:nth-child(4) {
+  -webkit-clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
+  -ms-clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
+  -moz-clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
+  clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
+  background-color: #F4442E;
+  opacity: 0.8;
+}
+.polygons:hover div:nth-child(4) {
+  -webkit-clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
+  -ms-clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
+  -moz-clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
+  clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
+  background-color: #F4442E;
+}
+.polygons:hover div:nth-child(1) {
+  -webkit-clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
+  -ms-clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
+  -moz-clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
+  clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
+  background-color: #F4442E;
+}
+.polygons:hover div:nth-child(2) {
+  -webkit-clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
+  -ms-clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
+  -moz-clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
+  clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
+  background-color: #0478CB;
+}
+.polygons:hover div:nth-child(3) {
+  -webkit-clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
+  -ms-clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
+  -moz-clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
+  clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
+  background-color: #0478CB;
+}
