@@ -19,20 +19,18 @@ p {
   color: #383D3B;
   font-size: 1.8rem;
 }
-a {
-  font-size: 1.8rem;
-}
 .initials {
   font-family: 'Press Start 2P', cursive, sans-serif;
   font-size: 4.8rem;
 }
 
 a {
+  font-size: 1.8rem;
   text-decoration: none;
   color: #383D3B;
-  &:hover {
-    color: #0478CB;
-  }
+}
+a:hover {
+  color: #0478CB;
 }
 .employer-link {
   color: #ed7451;
@@ -53,9 +51,34 @@ a {
   color: #F4442E;
 }
 
+.links .link {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.25rem 0;
+}
+.links .link svg {
+  margin-right: 0.25rem;
+}
+.deprecation-link {
+  display: flex;
+}
+.deprecation-notice {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 0.25rem;
+}
+.deprecation-notice a {
+  font-size: 1rem;
+  margin: 0 0.25rem;
+}
 .name {
   font-size: 1.8rem;
   text-transform: uppercase;
+}
+.name-container.uk-section {
+  padding: 3rem 0 0 0;
 }
 .name-container div {
   letter-spacing: 15px;
@@ -70,17 +93,18 @@ a {
   color: #F4442E;
 }
 
+
 /* Initials animation */
 .polygons {
-  margin: 0 auto;
-  max-width: 500px;
-  height: 200px;
+  margin: 0 auto 1rem;
+  max-width: 650px;
+  height: 300px;
   position: relative;
 }
 .polygons div {
   position: absolute;
   width: 100%;
-  height: 200px;
+  height: 300px;
   top: 0;
   left: 0;
   transition: 0.7s cubic-bezier(0.52, 0.01, 0.16, 1);
