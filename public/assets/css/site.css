@@ -92,6 +92,9 @@ a:hover {
 .initials-container .front span:nth-child(2) {
   color: #F4442E;
 }
+.bio {
+  text-align: center;
+}
 
 
 /* Initials animation */
@@ -125,14 +128,14 @@ a:hover {
   transition-delay: 0.6s;
   transition-duration: 0.7s;
 }
-.polygons div:nth-child(1) {
+.polygon-1 {
   -webkit-clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
   -ms-clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
   -moz-clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
   clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
   background-color: #0478CB;
 }
-.polygons div:nth-child(2) {
+.polygon-2 {
   -webkit-clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
   -ms-clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
   -moz-clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
@@ -140,14 +143,14 @@ a:hover {
   background-color: #0478CB;
   opacity: 0.8;
 }
-.polygons div:nth-child(3) {
+.polygon-3 {
   -webkit-clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
   -ms-clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
   -moz-clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
   clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
   background-color: #F4442E;
 }
-.polygons div:nth-child(4) {
+.polygon-4 {
   -webkit-clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
   -ms-clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
   -moz-clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
@@ -155,28 +158,28 @@ a:hover {
   background-color: #F4442E;
   opacity: 0.8;
 }
-.polygons:hover div:nth-child(4) {
+.polygon-animate-4 {
   -webkit-clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
   -ms-clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
   -moz-clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
   clip-path: polygon(30% 59%, 26% 15%, 5% 95%);
   background-color: #F4442E;
 }
-.polygons:hover div:nth-child(1) {
+.polygon-animate-1 {
   -webkit-clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
   -ms-clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
   -moz-clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
   clip-path: polygon(25% 62%, 26% 15%, 50% 95%);
   background-color: #F4442E;
 }
-.polygons:hover div:nth-child(2) {
+.polygon-animate-2 {
   -webkit-clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
   -ms-clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
   -moz-clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
   clip-path: polygon(77% 38%, 61% 15%, 50% 95%);
   background-color: #0478CB;
 }
-.polygons:hover div:nth-child(3) {
+.polygon-animate-3 {
   -webkit-clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
   -ms-clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
   -moz-clip-path: polygon(71% 30%, 83% 15%, 93% 95%);
