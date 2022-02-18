@@ -7,10 +7,19 @@ function ready (callback) {
 };
 
 ready(function() {
-  setInterval(function() {
-    for (var i = 1; i < 5; i++) {
-      console.log(i);
-      document.querySelector('.polygon-' + i).classList.toggle('polygon-animate-' + i)
-    }
-  }, 5000)
+  // Turns off screen loading effect.
+  // See https://github.com/kristopolous/BOOTSTRA.386
+  _386 = { fastLoad: true };
+
+  document.addEventListener('keyup', function (keyBoardEvent) {
+    switch (keyBoardEvent.key) {
+    case 'A':
+      document.querySelector('#home-link').click();
+      break;
+    case 'N':
+      document.querySelector('#notes-link').click();
+    default:
+      console.log('no key');
+    };
+  });
 });

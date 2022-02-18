@@ -10,97 +10,58 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png?v=1"/>
     <link rel="manifest" href="/assets/favicon/manifest.json?v=1"/>
     <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg?v=1"/>
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="/assets/css/site.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/assets/css/uikit.min.css" type="text/css" />
-    <script type="text/javascript" src="/assets/js/uikit.min.js"></script>
-    <script type="text/javascript" src="/assets/js/uikit-icons.min.js"></script>
+    <!-- Not using any of bootstaps JS components yet -->
+    <!-- <script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
+         <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script> -->
     <script type="text/javascript" src="/assets/js/site.js"></script>
   </head>
   <body>
-    <div class="name-container uk-section uk-section-muted">
-      <div class="polygon-name uk-container">
-        <div class="polygons">
-          <div class="polygon-1"></div>
-          <div class="polygon-2"></div>
-          <div class="polygon-3"></div>
-          <div class="polygon-4"></div>
-        </div>
-        <div class="name-container uk-flex uk-flex-center">
-          <div class="name">
-            alex
-          </div>
-          <div class="name">
-            miller
-          </div>
-        </div>
-      </div>
-      <div class="initials-container hidden">
-        <div class="initials">
-          <div class="front">
-            <span>A</span><span>M</span>
-          </div>
-        </div>
-        <div class="name full-name">
-          alex miller
-        </div>
-      </div>
-    </div>
-    <div class="uk-section uk-section-muted">
-      <div class="uk-container">
-        <p class="bio uk-text-lead">
+    <ul class="nav nav-pills">
+      <li><a id="home-link" href="/">Alex P. Miller</a></li>
+      <li><a id="notes-link" href="https://notes.alex-miller.co/">Notes</a></li>
+    </ul>
+    <div class="terminal">
+      <span>[apmiller@localhost /]$ cd ~/</span>
+      <span>[apmiller@localhost ~]$ cat ABOUT.txt</span>
+      <div class="about">
+        <p class="ascii-art">
+   _   _           ___   __  __ _ _ _
+  /_\ | |_____ __ | _ \ |  \/  (_) | |___ _ _
+ / _ \| / -_) \ / |  _/ | |\/| | | | / -_) '_|
+/_/ \_\_\___/_\_\ |_|   |_|  |_|_|_|_\___|_|
+        </p>
+        <p>
           I make computer stuff out of <a href="https://www.ruby-lang.org/en/">Ruby</a> and
           <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a>.
         </p>
-
-        <p class="bio uk-text-lead">
+        <p>
           I use <a href="https://www.gnu.org/software/emacs/">GNU Emacs</a>.
         </p>
-
-        <p class="bio uk-text-lead">
-          I take <a href="http://notes.alex-miller.co/" class="link">notes</a> so I can remember things.
+        <p>
+          I take <a href="https://notes.alex-miller.co/" class="link">notes</a> so I can remember things.
         </p>
       </div>
-    </div>
-    <div class="uk-section uk-section-secondary">
-      <div class="uk-container">
-        <div class="links">
-          <div>
-            <a href="https://notes.alex-miller.co/" class="link notes" uk-icon="icon: album">
-              notes
-            </a>
-          </div>
-          <div>
-            <a href="https://github.com/apmiller108" class="link github" uk-icon="icon: github-alt">
-              github
-            </a>
-          </div>
-          <div>
-            <a href="https://twitter.com/apmiller108" class="link twitter" uk-icon="icon: twitter">
-              @apmiller108
-            </a>
-          </div>
-          <div>
-            <a href="https://www.reddit.com/user/apmillz" class="link reddit" uk-icon="icon: reddit">
-              u/apmillz
-            </a>
-          </div>
-          <div>
-            <a href="https://www.linkedin.com/in/alex-miller-551b0b59" class="link linkedin" uk-icon="icon: linkedin">
-              linkedin
-            </a>
-          </div>
-          <div class="deprecation-link">
-            <a href="http://blog.alex-miller.co/" class="link blog" uk-icon="file-text">
-              blog
-            </a>
-            <span class="deprecation-notice uk-article-meta">
-              (This is deprecated. See my
-              <a href="http://notes.alex-miller.co/" class="link notes">
-                notes
-              </a>
-              instead)
-            </span>
-          </div>
+      <span>[apmiller@localhost ~]$ ls links/</span>
+      <div class="links">
+        <div>
+          <a href="https://notes.alex-miller.co/">notes</a>
+        </div>
+        <div>
+          <a href="https://github.com/apmiller108">github</a>
+        </div>
+        <div>
+          <a href="https://twitter.com/apmiller108">@apmiller108</a>
+        </div>
+        <div>
+          <a href="https://www.reddit.com/user/apmillz">u/apmillz</a>
+        </div>
+        <div>
+          <a href="https://www.linkedin.com/in/alex-miller-551b0b59">linkedin</a>
+        </div>
+        <div>
+          <a href="http://blog.alex-miller.co/">blog(deprecated)</a>
         </div>
       </div>
     </div>
