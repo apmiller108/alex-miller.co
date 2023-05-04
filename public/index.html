@@ -16,8 +16,17 @@
     <!-- <script type="text/javascript" src="/assets/js/jquery-3.6.0.min.js"></script>
          <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script> -->
     <script type="text/javascript" src="/assets/js/site.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWXZYBMZ7M"></script>
   </head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KWXZYBMZ7M"></script>
+  <script>
+    if(document.location.hostname === 'www.alex-miller.co' || document.location.hostname === 'alex-miller.co') {
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-KWXZYBMZ7M');
+    }
+</script>
   <body>
     <ul class="nav nav-pills">
       <li><a id="home-link" href="/">Alex P. Miller</a></li>
@@ -67,14 +76,4 @@
       </div>
     </div>
   </body>
-
-<script>
-if(document.location.hostname === 'www.alex-miller.co' || document.location.hostname === 'alex-miller.co') {
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-KWXZYBMZ7M');
-}
-</script>
 </html>
