@@ -27,4 +27,8 @@ a:hover {
 }
 .ascii-art {
   white-space: pre;
+  margin: 0;
+}
+.about-list {
+  margin: 20px 0 40px 0;
 }
