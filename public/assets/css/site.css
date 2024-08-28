@@ -25,9 +25,16 @@ a:hover {
 .about {
   color: #55ffff
 }
+.name {
+  display: flex;
+  flex-wrap: wrap;
+}
+.name:has(.ascii-art:wrap) {
+  border: 1px solid red;
+}
 .ascii-art {
   white-space: pre;
-  margin: 0;
+  margin: 0 10px 0 0;
 }
 .about-list {
   margin: 20px 0 40px 0;

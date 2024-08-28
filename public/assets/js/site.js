@@ -19,7 +19,6 @@ ready(function() {
     case 'N':
       document.querySelector('#notes-link').click();
     default:
-      console.log('no key');
     };
   });
 });
