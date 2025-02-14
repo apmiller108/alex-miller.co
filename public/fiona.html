@@ -52,7 +52,9 @@
      }
      /* O */
      .letters span:nth-child(3) {
-       clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%, 20% 10%, 20% 10%, 20% 10%);
+       width: 100%;
+       max-width: 145px;
+       clip-path: url(#letter-o-path);
      }
      /* N */
      .letters span:nth-child(4) {
@@ -62,6 +64,8 @@
      .letters span:nth-child(5) {
        clip-path: polygon(35% 1%, 51% 1%, 64% 1%, 77% 41%, 99% 99%, 73% 100%, 63% 76%, 55% 56%, 40% 56%, 34% 77%, 28% 100%, 0% 99%, 22% 39%);
        margin-right: 4rem;
+       width: 15em;
+       max-width: unset;
      }
      /* I */
      .letters span:nth-child(6) {
@@ -69,7 +73,7 @@
      }
      /* S */
      .letters span:nth-child(7) {
-       clip-path: polygon(100% 0, 0 0, 0 30%, 65% 30%, 65% 45%, 0 45%, 0 100%, 100% 100%, 100% 70%, 35% 70%, 35% 55%, 100% 55%, 100% 55%);
+       clip-path: polygon(90% 0, 0 10%, 0 30%, 65% 20%, 65% 35%, 0 50%, 0 100%, 100% 90%, 90% 70%, 35% 80%, 35% 60%, 100% 50%, 100% 55%);
      }
      /* Heart */
      .letters span:nth-child(8) {
@@ -92,12 +96,35 @@
      .lego-dudes .construction-worker {
        position: absolute;
        top: -234px;
+       animation:wobble 2s linear infinite;
+     }
+
+     @keyframes wobble {
+       0% {
+         transform:rotate(0deg);
+       }
+       25% {
+         transform:rotate(20deg);
+       }
+       50% {
+         transform:rotate(0deg);
+         }
+       75% {
+         transform:rotate(-20deg);
+         }
+     }
+
+     @keyframes spin {
+       100% {
+         transform:rotate(360deg);
+       }
      }
 
      .lego-dudes .batman {
        position: absolute;
        top: 133px;
        right: 0;
+       animation:spin 2s linear infinite;
       }
      /* AWESOME hover states */
      /* To animate, each polygon must be the same number of points (13 in this case) */
@@ -111,16 +138,20 @@
      }
      /* E */
      .letters.click span:nth-child(3) {
+       width: 15em;
+       max-width: unset;
        clip-path: polygon(1% 1%, 99% 0%, 100% 23%, 28% 23%, 28% 46%, 61% 45%, 63% 63%, 29% 63%, 29% 84%, 100% 84%, 100% 99%, 0% 100%, 0% 50%);
      }
      /* S */
      .letters.click span:nth-child(4) {
-       clip-path: polygon(100% 0, 0 0, 0 30%, 65% 30%, 65% 45%, 0 45%, 0 100%, 100% 100%, 100% 70%, 35% 70%, 35% 55%, 100% 55%, 100% 55%);
+       clip-path: polygon(90% 0, 0 10%, 0 30%, 65% 20%, 65% 35%, 0 50%, 0 100%, 100% 90%, 90% 70%, 35% 80%, 35% 60%, 100% 50%, 100% 55%);
      }
      /* O */
      .letters.click span:nth-child(5) {
-       clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%, 20% 10%, 20% 10%, 20% 10%);
+       clip-path: url(#letter-o-path);
        margin-right: 0;
+       width: 100%;
+       max-width: 145px;
      }
      /* M */
      .letters.click span:nth-child(6) {
@@ -140,10 +171,23 @@
        opacity: 1;
        backgound-color: none;
      }
+
     </style>
   </head>
   <body>
     <div class="fiona">
+      <svg xmlns='http://www.w3.org/2000/svg'
+        viewBox='0 0 145 240'
+        width='100%'
+        height='100%'
+        preserveAspectRatio='xMidYMid meet'>
+        <clipPath id='letter-o-path'>
+          <path d='M0,120 A72.5,120 0,1,1 145,120 A72.5,120 0,1,1 0,120 z
+                   M36.25,120 A36.25,60 0,1,1 108.75,120 A36.25,60 0,1,1 36.25,120 z'
+            clip-rule='evenodd'/>
+        </clipPath>
+      </svg>
+
       <div id="letters" class="letters">
         <span></span>
         <span></span>
