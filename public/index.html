@@ -30,8 +30,6 @@
       <li><a id="notes-link" href="https://notes.alex-miller.co/">Notes</a></li>
     </ul>
     <div class="terminal">
-      <span>[apmiller@localhost /]$ cd ~/</span>
-      <span>[apmiller@localhost ~]$ cat ABOUT.txt</span>
       <div class="about">
         <div class="name">
           <p class="ascii-art">
@@ -49,34 +47,86 @@
         </div>
         <ul class="about-list">
           <li>
-            Makes things out of <a href="https://www.ruby-lang.org/en/">Ruby</a> and
-            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a>.
+            Makes software
           </li>
           <li>
-            Makes said things using <a href="https://www.gnu.org/software/emacs/">GNU Emacs</a>,
-            the <a href="https://www.spacemacs.org/">Spacemacs</a> variety.
+            Brain dumps <a href="https://notes.alex-miller.co/" class="link">stuff</a>
           </li>
           <li>
-            Takes <a href="https://notes.alex-miller.co/" class="link">notes</a> to extend limited intelligence.
-          </li>
-          <li>
-            <a href="https://soundcloud.com/alex-miller4">Mixes EDM</a> on some <a href="https://notes.alex-miller.co/20220621180113-my_audio_setup/">weird, nerdy rig</a>.
+            <a href="https://soundcloud.com/alex-miller4">Mixes EDM</a> with
+            <a href="https://notes.alex-miller.co/20220621180113-my_audio_setup/">this</a>
           </li>
         </ul>
       </div>
-      <span>[apmiller@localhost ~]$ ls links/</span>
+      <div class="projects">
+        <div class="section-header">
+          <p class="ascii-art">
+ ____            _           _
+|  _ \ _ __ ___ (_) ___  ___| |_ ___
+| |_) | '__/ _ \| |/ _ \/ __| __/ __|
+|  __/| | | (_) | |  __/ (__| |_\__ \
+|_|   |_|  \___// |\___|\___|\__|___/
+              |__/
+          </p>
+          <h2>Projects</h2>
+        </div>
+
+        <div class="project-list">
+          <div class="project">
+            <h3 class="project-title">TMP</h3>
+            <div class="project-desc">A brief description of your first Ruby project. Include key technologies.</div>
+            <div class="project-links">
+              <a href="#">GITHUB</a> |
+              <a href="#" class="demo-link">DEMO</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">MIXXX MIDI CLOCK</h3>
+            <div class="project-desc">Description of your second project with its purpose and tech stack.</div>
+            <div class="project-links">
+              <a href="#">GITHUB</a> |
+              <a href="#" class="demo-link">DEMO</a>
+            </div>
+          </div>
+
+          <div class="project">
+            <h3 class="project-title">SLIP-BOX</h3>
+            <div class="project-desc">Your third project's description highlighting your skills.</div>
+            <div class="project-links">
+              <a href="#">GITHUB</a> |
+              <a href="#" class="demo-link">DEMO</a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="links">
         <div>
-          <a href="https://notes.alex-miller.co/">notes</a>
+          <a href="https://notes.alex-miller.co/">NOTES</a>
         </div>
         <div>
-          <a href="https://github.com/apmiller108">github</a>
+          <a href="https://github.com/apmiller108">GITHUB</a>
         </div>
         <div>
-          <a href="https://www.linkedin.com/in/alex-miller-551b0b59">linkedin</a>
+          <a href="https://www.linkedin.com/in/alex-miller-551b0b59">LINKEDIN</a>
         </div>
-        <div>
-          <a href="http://blog.alex-miller.co/">blog(deprecated)</a>
+      </div>
+    </div>
+    <!-- Demo Modal -->
+    <div id="demo-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close-modal">&times;</span>
+          <h3 id="modal-title"></h3>
+        </div>
+        <div class="modal-body">
+          <div class="screenshot-container">
+            <img id="modal-image" src="assets/images/lego-dude.png" alt="Project Screenshot">
+          </div>
+          <div id="modal-description" class="modal-description"></div>
+        </div>
+        <div class="modal-footer">
+          <p class="modal-prompt">Press ESC or click X to close</p>
         </div>
       </div>
     </div>
