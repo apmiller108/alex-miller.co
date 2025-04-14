@@ -67,22 +67,12 @@ body {
 }
 
 .section-header h2 {
-  display: none;
   color: #55ffff;
   font-size: 24px;
   text-transform: uppercase;
   border-bottom: 1px solid #55ffff;
   padding-bottom: 5px;
   margin-bottom: 15px;
-}
-
-@media (max-width: 768px) {
-  .section-header .ascii-art {
-    display: none;
-  }
-  .section-header h2 {
-    display: block;
-  }
 }
 
 .project-desc {
@@ -111,8 +101,12 @@ body {
   border: 2px solid #55ffff;
   margin: 10% auto;
   width: 75%;
+  max-width: 75%;
   box-shadow: 0 0 1rem #55ffff;
   animation: modalFadeIn 0.3s;
+  display: flex;
+  flex-direction: column;
+  height: 75%
 }
 
 @keyframes modalFadeIn {
@@ -130,9 +124,10 @@ body {
 }
 
 .modal-header h3 {
-  margin: 0;
   font-family: "Courier New", monospace;
   font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
 .close-modal {
@@ -149,6 +144,20 @@ body {
 .modal-body {
   padding: 1rem;
   color: #ffffff;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.modal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #000040;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background-color: #55ffff;
 }
 
 .screenshot-container {
@@ -167,6 +176,7 @@ body {
   padding: 0.75rem;
   background-color: #000040; /* Darker blue */
   border-left: 3px solid #55ffff;
+  margin-bottom: 1rem;
 }
 
 .modal-footer {
@@ -180,4 +190,220 @@ body {
 .modal-prompt {
   margin: 0;
   font-style: italic;
+}
+
+/* Project */
+
+/* Feature list styling */
+.feature-heading {
+  color: #55ffff;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #55ffff;
+  padding: 0.25rem 0;
+}
+
+.feature-list {
+  list-style-type: none;
+  padding-left: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.feature-item {
+  margin-bottom: 0.75rem;
+  position: relative;
+  padding-left: 1.25rem;
+  line-height: 1.4;
+}
+
+.feature-item::before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: #55ffff;
+  font-weight: bold;
+}
+
+.feature-key {
+  color: #ffff00;
+  font-weight: bold;
+}
+
+/* Image gallery styling */
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.screenshot-figure {
+  margin: 0;
+  border: 1px solid #55ffff;
+  background-color: #000040;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.screenshot-figure:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(85, 255, 255, 0.5);
+}
+
+
+/* Make images cursor indicate they're clickable */
+.screenshot-img {
+}
+
+.screenshot-img {
+  width: 100%;
+  display: block;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  cursor: pointer;
+}
+
+.screenshot-img:hover {
+  outline: 2px solid #ffff00;
+}
+
+.screenshot-img.loaded {
+  opacity: 1;
+}
+
+.screenshot-caption {
+  padding: 0.75rem;
+  background-color: rgba(0, 0, 64, 0.8);
+  color: #ffffff;
+  text-align: center;
+  font-style: italic;
+  border-top: 1px solid #55ffff;
+}
+
+/* Responsive adjustments for the gallery */
+@media (max-width: 768px) {
+  .image-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-width: 90%;
+    margin: 5% auto;
+    height: 85%;
+  }
+}
+
+/* DOS Viewer Styles */
+.dos-viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000080;
+  z-index: 3000;
+  display: flex;
+  flex-direction: column;
+  animation: bootAnimation 0.3s ease-in-out;
+}
+
+@keyframes bootAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.dos-viewer-exit {
+  animation: shutdownAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes shutdownAnimation {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+.dos-viewer-header {
+  background-color: #55ffff;
+  color: #000080;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 1px solid #ffffff;
+}
+
+.dos-viewer-body {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000040;
+  overflow: auto;
+  padding: 1rem;
+}
+
+.dos-viewer-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto; /* Ensure image maintains aspect ratio */
+  height: auto; /* Ensure image maintains aspect ratio */
+  object-fit: contain;
+  border: 1px solid #55ffff;
+  transition: opacity 0.2s ease;
+}
+
+.dos-viewer-footer {
+  background-color: #000080;
+  border-top: 1px solid #55ffff;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.dos-viewer-nav {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.dos-nav-item {
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.dos-nav-item:hover {
+  background-color: #0000aa;
+}
+
+.dos-key {
+  background-color: #55ffff;
+  color: #000080;
+  padding: 0.1rem 0.3rem;
+  border: 1px outset #aaaaaa;
+  font-weight: bold;
+  margin-right: 0.25rem;
+}
+
+.dos-nav-item:hover .dos-key {
+  background-color: #ffffff;
+}
+
+.dos-viewer-counter {
+  color: #55ffff;
 }

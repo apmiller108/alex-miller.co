@@ -1,0 +1,35 @@
+{
+  "TMP": {
+    "headings": {
+      "Key Features": {
+        "Intelligent Conversations": "Engage with Anthropic's Claude LLMs for natural, context-aware discussions",
+        "Visual Creation Studio": "Generate and edit images through Stability AI with intelligent LLM assistance (tool use)",
+        "Semantic Search": "Find what you need with vector-based search that understands context, not just keywords",
+        "Real-time Processing": "Interactions with asynchronous processing and WebSockets that delivers generated content when created"
+      },
+      "Interface": {
+        "Navigation Sidebar": "Quick access to conversation history",
+        "Central Chat Area": "Your AI interactions with tool use",
+        "Context Panel": "Featuring a scrollspy for easy navigation and related chats powered by nearest neighbor vector matching"
+      }
+    },
+    "screenshots": [
+      {
+        "path": "assets/images/tmp/tmp-mermaid-charts.webp",
+        "caption": "Chart data with mermaid"
+      },
+      {
+        "path": "assets/images/tmp/tmp-upscale-img.webp",
+        "caption": "Generate, edit and upscale images"
+      },
+      {
+        "path": "assets/images/tmp/tmp-gen-img-meta-data.webp",
+        "caption": "Offload image prompting and options to AI"
+      },
+      {
+        "path": "assets/images/tmp/tmp-preset.webp",
+        "caption": "Use presets to prime the LLM for specific tasks"
+      }
+    ]
+  }
+}
