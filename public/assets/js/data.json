@@ -40,5 +40,49 @@
       }
 
     ]
+  },
+  "MIXXX MIDI CLOCK": {
+    "headings": {
+      "Key Features": {
+        "Feature 1": "Feature description",
+        "Feature 2": "Feature description",
+        "Feature 3": "Feature description",
+        "Feature 4": "Feature description"
+      },
+      "Heading 2": {
+        "Feature 1": "Feature description",
+        "Feature 2": "Feature description",
+        "Feature 3": "Feature description",
+        "Feature 3": "Feature description"
+      }
+    },
+    "screenshots": [
+      {
+        "path": "assets/images/mixxx_midi_clock/mmc-demo-image_2025-04-14.webp",
+        "caption": "image 1"
+      }
+    ]
+  },
+  "SLIP-BOX": {
+    "headings": {
+      "Key Features": {
+        "Feature 1": "Feature description",
+        "Feature 2": "Feature description",
+        "Feature 3": "Feature description",
+        "Feature 4": "Feature description"
+      },
+      "Heading 2": {
+        "Feature 1": "Feature description",
+        "Feature 2": "Feature description",
+        "Feature 3": "Feature description",
+        "Feature 3": "Feature description"
+      }
+    },
+    "screenshots": [
+      {
+        "path": "assets/images/slip_box/slip-box-demo-image_2025-04-14.webp",
+        "caption": "image 1"
+      }
+    ]
   }
 }

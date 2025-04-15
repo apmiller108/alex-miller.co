@@ -67,6 +67,7 @@ function renderProject(name, data) {
       const img = document.createElement('img');
       img.src = screenshot.path;
       img.alt = `${name} screenshot - ${screenshot.caption}`;
+      img.loading = 'lazy';
       img.classList.add('screenshot-img');
       img.dataset.index = index;
 
