@@ -407,3 +407,7 @@ body {
 .dos-viewer-counter {
   color: #55ffff;
 }
+.footer {
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
