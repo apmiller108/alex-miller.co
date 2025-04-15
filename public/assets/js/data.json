@@ -15,21 +15,30 @@
     },
     "screenshots": [
       {
-        "path": "assets/images/tmp/tmp-mermaid-charts.webp",
+        "path": "assets/images/tmp/tmp-charts_2025-04-14.webp",
         "caption": "Chart data with mermaid"
       },
       {
-        "path": "assets/images/tmp/tmp-upscale-img.webp",
+        "path": "assets/images/tmp/tmp-upscale_2025-04-14.webp",
         "caption": "Generate, edit and upscale images"
       },
       {
-        "path": "assets/images/tmp/tmp-gen-img-meta-data.webp",
+        "path": "assets/images/tmp/tmp-img-prompts_2025-04-14.webp",
         "caption": "Offload image prompting and options to AI"
       },
       {
-        "path": "assets/images/tmp/tmp-preset.webp",
+        "path": "assets/images/tmp/tmp-presets_2025-04-14.webp",
         "caption": "Use presets to prime the LLM for specific tasks"
+      },
+      {
+        "path": "assets/images/tmp/tmp-related-chat_2025-04-14.webp",
+        "caption": "Quickly view previous chats related to the current one"
+      },
+      {
+        "path": "assets/images/tmp/tmp-search_2025-04-14.webp",
+        "caption": "Search for stuff"
       }
+
     ]
   }
 }
