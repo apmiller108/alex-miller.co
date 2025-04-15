@@ -1,0 +1,8 @@
+:PROPERTIES:
+:CATEGORY: alex-miller.co
+:END:
+* TODO add annoted mixxx midi clock image
+* TODO add remaining mixxx midi clock images
+* TODO Highlight key phrases in description
+* TODO Add links
+* TODO Proof-read
