@@ -109,7 +109,7 @@ function openFullSizeImage(screenshots, index) {
 
   viewer.innerHTML = `
     <div class="dos-viewer-header">
-      <div class="dos-viewer-title">IMAGE.EXE - ${currentScreenshot.caption}</div>
+      <div class="dos-viewer-title">${currentScreenshot.caption}</div>
     </div>
     <div class="dos-viewer-body">
       <img class="dos-viewer-image" src="${currentScreenshot.path}" alt="${currentScreenshot.caption}">

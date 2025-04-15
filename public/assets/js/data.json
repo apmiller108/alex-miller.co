@@ -2,15 +2,15 @@
   "TMP": {
     "headings": {
       "Key Features": {
-        "Intelligent Conversations": "Engage with Anthropic's Claude LLMs for natural, context-aware discussions",
+        "Intelligent Conversations": "Anthropic's Claude LLMs context-aware discussions",
         "Visual Creation Studio": "Generate and edit images through Stability AI with intelligent LLM assistance (tool use)",
         "Semantic Search": "Find what you need with vector-based search that understands context, not just keywords",
-        "Real-time Processing": "Interactions with asynchronous processing and WebSockets that delivers generated content when created"
+        "Real-time Processing": "Asynchronous processing with backgound workers and WebSockets that deliver generated content"
       },
       "Interface": {
         "Navigation Sidebar": "Quick access to conversation history",
         "Central Chat Area": "Your AI interactions with tool use",
-        "Context Panel": "Featuring a scrollspy for easy navigation and related chats powered by nearest neighbor vector matching"
+        "Context Panel": "Featuring a scrollspy for easy navigation and related chats powered by nearest neighbor matching"
       }
     },
     "screenshots": [
@@ -44,45 +44,51 @@
   "MIXXX MIDI CLOCK": {
     "headings": {
       "Key Features": {
-        "Feature 1": "Feature description",
-        "Feature 2": "Feature description",
-        "Feature 3": "Feature description",
-        "Feature 4": "Feature description"
+        "Tempo Synchronization": "Syncs external hardware to Mixxx's Sync Leader deck, following tempo changes in real-time",
+        "Beat Adjustment": "Fine-tune beat alignment with an encoder that temporarily adjusts clock speed to match phases",
+        "MIDI Transport Controls": "Dedicated buttons for MIDI Start, Stop, and Continue messages with intelligent beat-aware behavior",
+        "Visual Feedback": "OLED display shows clock status, sequencer state, and BPM with beat indicator LEDs",
+        "Dual-Mode Operation": "Functions with Mixxx or as a standalone master MIDI clock generator"
       },
-      "Heading 2": {
-        "Feature 1": "Feature description",
-        "Feature 2": "Feature description",
-        "Feature 3": "Feature description",
-        "Feature 3": "Feature description"
+      "Technical Details": {
+        "Multiple Outputs": "Sends MIDI clock over both USB and 5-pin DIN connections simultaneously",
+        "Microcontroller": "Build for boards based on the ATmega32u4"
       }
     },
     "screenshots": [
       {
         "path": "assets/images/mixxx_midi_clock/mmc-demo-image_2025-04-14.webp",
-        "caption": "image 1"
+        "caption": "Mixxx MIDI Clock Arduino device with OLED display and controls"
       }
     ]
   },
   "SLIP-BOX": {
     "headings": {
       "Key Features": {
-        "Feature 1": "Feature description",
-        "Feature 2": "Feature description",
-        "Feature 3": "Feature description",
-        "Feature 4": "Feature description"
-      },
-      "Heading 2": {
-        "Feature 1": "Feature description",
-        "Feature 2": "Feature description",
-        "Feature 3": "Feature description",
-        "Feature 3": "Feature description"
+        "Emacs/Org-mode": "Static website published using Emacs's Org-mode",
+        "Automation": "Automatic publishing using GitHub actions on each commit",
+        "Search": "Client side search powered by Lunrjs",
+        "Comments": "Comments powered by Utterances via GitHub issues"
       }
     },
     "screenshots": [
       {
-        "path": "assets/images/slip_box/slip-box-demo-image_2025-04-14.webp",
-        "caption": "image 1"
+        "path": "assets/images/slip-box/slip-box-index_2025-04-15.webp",
+        "caption": "Sortable notes tagged by topic"
+      },
+      {
+        "path": "assets/images/slip-box/slip-box-toc_2025-04-15.webp",
+        "caption": "TOCs generated from headings"
+      },
+      {
+        "path": "assets/images/slip-box/slip-box-search_2025-04-15.webp",
+        "caption": "Client side search with Lunrjs"
+      },
+      {
+        "path": "assets/images/slip-box/slip-box-note_2025-04-15.webp",
+        "caption": "Comments by Utterances"
       }
+
     ]
   }
 }

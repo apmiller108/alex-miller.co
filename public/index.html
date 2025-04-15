@@ -66,19 +66,23 @@
         <div class="project-list">
           <div class="project" data-project-name="TMP">
             <h3 class="project-title">TMP</h3>
-            <p class="project-desc">
-              A multimodal AI chat application built with Ruby on Rails. It
-              combines conversational AI, image generation, and other generative
-              AI functions in a single interface.
-
-              Built as a learning project to explore the latest capabilities of
-              Ruby on Rails, Hotwire, and AI integrations, TMP demonstrates how
-              one can build fun, responsive AI experiences with modern web
-              technologies.
-
-              Good for developers, content creators, researchers, or anyone who
-              wants to use multimodal AI in a unified platform.
-            </p>
+            <div class="project-desc">
+              <p>
+                A multimodal AI chat application built with Ruby on Rails. It
+                combines conversational AI, image generation, and other generative
+                AI functions in a single interface.
+              </p>
+              <p>
+                Built as a learning project to explore the latest capabilities of
+                Ruby on Rails, Hotwire, and AI integrations, TMP demonstrates how
+                one can build fun, responsive AI experiences with modern web
+                technologies.
+              </p>
+              <p>
+                Good for developers, content creators, researchers, or anyone who
+                wants to use multimodal AI in a unified platform.
+              </p>
+            </div>
             <div class="project-links">
               <a href="https://github.com/apmiller108/tmp">GITHUB</a> |
               <a href="#" class="demo-link">DEMO</a>
@@ -87,7 +91,24 @@
 
           <div class="project" data-project-name="MIXXX MIDI CLOCK">
             <h3 class="project-title">MIXXX MIDI CLOCK</h3>
-            <div class="project-desc">Description of your second project with its purpose and tech stack.</div>
+            <div class="project-desc">
+              <p>
+                Arduino-based MIDI clock generator that bridges the gap between
+                Mixxx (digital DJing software) and external hardware gear. It
+                synchronizes tempo between tracks playing in Mixxx and external
+                hardware like drum machines, sequencers, and samplers through
+                MIDI clock signals.
+              </p>
+              <p>
+                Also provides transport controls that are beat aware for
+                squencer like behavior.
+              </p>
+              <p>
+                The device can also function as a standalone MIDI clock
+                generator, offering flexibility for various performance
+                scenarios.
+              </p>
+            </div>
             <div class="project-links">
               <a href="https://github.com/apmiller108/mixxx_midi_clock">GITHUB</a> |
               <a href="#" class="demo-link">DEMO</a>
@@ -96,7 +117,11 @@
 
           <div class="project" data-project-name="SLIP-BOX">
             <h3 class="project-title">SLIP-BOX</h3>
-            <div class="project-desc">Your third project's description highlighting your skills.</div>
+            <div class="project-desc">
+              A public brain dump of notes automatically compiled on GitHub
+              actions into a static website using emcas's org-mode and published
+              <a href="http://notes.alex-miller.co"> here</a>
+            </div>
             <div class="project-links">
               <a href="https://github.com/apmiller108/slip-box">GITHUB</a> |
               <a href="#" class="demo-link">DEMO</a>
@@ -116,7 +141,7 @@
         </div>
       </div>
     </div>
-    <!-- Demo Modal -->
+    <!-- Demo modal template -->
     <div id="demo-modal" class="modal">
       <div class="modal-content">
         <div class="modal-header">
@@ -125,9 +150,7 @@
         </div>
         <div class="modal-body">
           <div id="modal-description" class="modal-description"></div>
-          <div id="screenshot-container" class="screenshot-container">
-            <img id="modal-image" src="assets/images/tmp/tmp-mermaid-charts.webp" alt="Project Screenshot">
-          </div>
+          <div id="screenshot-container" class="screenshot-container"></div>
         </div>
         <div class="modal-footer">
           <p class="modal-prompt">Press ESC or click X to close</p>
