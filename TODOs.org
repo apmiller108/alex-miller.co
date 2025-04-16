@@ -1,8 +1,10 @@
 :PROPERTIES:
 :CATEGORY: alex-miller.co
 :END:
-* TODO add annoted mixxx midi clock image
-* TODO add remaining mixxx midi clock images
+* DONE add annoted mixxx midi clock image
+CLOSED: [2025-04-15 Tue 19:31]
+* DONE add remaining mixxx midi clock images
+CLOSED: [2025-04-15 Tue 19:31]
 * TODO Highlight key phrases in description
 * TODO Add links
 * TODO Proof-read

@@ -57,9 +57,14 @@
     },
     "screenshots": [
       {
-        "path": "assets/images/mixxx_midi_clock/mmc-demo-image_2025-04-14.webp",
-        "caption": "Mixxx MIDI Clock Arduino device with OLED display and controls"
+        "path": "assets/images/mixxx_midi_clock/mmc-demo-image3_2025-04-15.webp",
+        "caption": "Mixxx MIDI Clock Arduino prototype controls"
+      },
+      {
+        "path": "assets/images/mixxx_midi_clock/mmc-demo-image2_2025-04-15.webp",
+        "caption": "Mixxx MIDI Clock Arduino prototype"
       }
+
     ]
   },
   "SLIP-BOX": {
