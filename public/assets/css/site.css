@@ -214,6 +214,7 @@ body {
   position: relative;
   padding-left: 1.25rem;
   line-height: 1.4;
+  list-style: none;
 }
 
 .feature-item::before {
