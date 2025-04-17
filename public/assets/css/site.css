@@ -26,6 +26,27 @@ body {
   line-height: 1.2;
 }
 
+/* Name container styling */
+.name-container {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #000060;
+  border: 1px solid #55ffff;
+  overflow-x: auto;
+  position: relative;
+}
+
+/* ASCII art styling */
+.ascii-art {
+  white-space: pre;
+  margin: 0;
+  font-family: monospace;
+  text-shadow: 5px 5px 5px #55ffff;
+  font-size: 0.5em;
+  line-height: 1.2;
+  text-align: center;
+}
+
 /* Terminal styling */
 .terminal {
   border: 2px solid #bbbbbb;
@@ -47,47 +68,21 @@ body {
   font-size: 1rem
 }
 
-.about {
-  color: #55ffff;
-  padding: 15px;
-}
-
-/* Name container styling */
-.name-container {
-  margin: 20px 0;
-  padding: 10px;
-  background-color: #000060;
-  border: 1px solid #55ffff;
-  overflow-x: auto;
-  position: relative;
-}
-
-/* ASCII art styling */
-.ascii-art {
-  white-space: pre;
-  margin: 0;
-  font-family: monospace;
-  text-shadow: 0 0 5px #55ffff;
-  font-size: 0.7em;
-  line-height: 1.2;
-  text-align: center;
-}
-
 /* About content styling */
-.about-content {
+.terminal-content {
   margin: 1rem 0;
   position: relative;
+  padding: 1rem;
 }
 
-.about-card {
+.terminal-card {
   background-color: #000060;
   border: 1px solid #55ffff;
   padding: 1rem;
   position: relative;
 }
 
-.about-card::before {
-  content: "PROFILE DATA";
+.terminal-card::before {
   position: absolute;
   top: -10px;
   left: 10px;
@@ -97,25 +92,41 @@ body {
   color: #ffff00;
 }
 
+.about-card.terminal-card::before {
+  content: "PROFILE DATA";
+}
+
+.projects-card.terminal-card::before {
+  content: "PROJECTS"
+}
+
 /* About list styling */
-.about-list {
+.terminal-list {
   list-style-type: none;
   padding-left: 5px;
   margin: 10px 0;
 }
 
-.about-item {
+.terminal-item {
   list-style: none;
   margin-bottom: 10px;
 }
 
 /* Status bar styling */
 .status-bar {
-  margin-top: 15px;
-  border-top: 1px solid #55ffff;
-  padding-top: 5px;
   color: #ffffff;
-  font-size: 12px;
+  font-size: 0.75rem;
+}
+
+span.complete {
+  color: #fff;
+  background: grey;
+  padding: 0.25rem;
+}
+span.active {
+  color: #fff;
+  background: green;
+  padding: 0.25rem;
 }
 
 /* Responsive display controls */
@@ -162,6 +173,10 @@ body {
   border-left: 2px solid #55ffff;
 }
 
+.project-title-container {
+  display: flex;
+  justify-content: space-between;
+}
 .project-title {
   color: #ffffff;
   font-weight: bold;
@@ -509,6 +524,10 @@ body {
 
 .dos-viewer-counter {
   color: #55ffff;
+}
+
+.links {
+  margin-top: 1rem;
 }
 .footer {
   font-size: 0.75rem;
