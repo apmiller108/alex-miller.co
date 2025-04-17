@@ -18,17 +18,6 @@ a:hover {
 .about {
   color: #55ffff
 }
-.name {
-  display: flex;
-  flex-wrap: wrap;
-}
-.name:has(.ascii-art:wrap) {
-  border: 1px solid red;
-}
-.ascii-art {
-  white-space: pre;
-  margin: 0 10px 0 0;
-}
 body {
   background-color: #000080; /* Classic DOS blue */
   color: #ffffff;
@@ -37,11 +26,124 @@ body {
   line-height: 1.2;
 }
 
+/* Terminal styling */
 .terminal {
-  background-color: #000080;
   border: 2px solid #bbbbbb;
+  padding: 0;
+  margin-top: 1.5rem;
+  box-shadow: 5px 5px 0 #000040;
+  position: relative;
+}
+
+.terminal-header {
+  background-color: #aaaaaa;
+  color: #000080;
+  padding: 5px 10px;
+  font-weight: bold;
+  border-bottom: 1px solid #ffffff;
+}
+
+.terminal-title {
+  font-size: 1rem
+}
+
+.about {
+  color: #55ffff;
   padding: 15px;
-  margin-top: 20px;
+}
+
+/* Name container styling */
+.name-container {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: #000060;
+  border: 1px solid #55ffff;
+  overflow-x: auto;
+  position: relative;
+}
+
+/* ASCII art styling */
+.ascii-art {
+  white-space: pre;
+  margin: 0;
+  font-family: monospace;
+  text-shadow: 0 0 5px #55ffff;
+  font-size: 0.7em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* About content styling */
+.about-content {
+  margin: 1rem 0;
+  position: relative;
+}
+
+.about-card {
+  background-color: #000060;
+  border: 1px solid #55ffff;
+  padding: 1rem;
+  position: relative;
+}
+
+.about-card::before {
+  content: "PROFILE DATA";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  background-color: #000080;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #ffff00;
+}
+
+/* About list styling */
+.about-list {
+  list-style-type: none;
+  padding-left: 5px;
+  margin: 10px 0;
+}
+
+.about-item {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+/* Status bar styling */
+.status-bar {
+  margin-top: 15px;
+  border-top: 1px solid #55ffff;
+  padding-top: 5px;
+  color: #ffffff;
+  font-size: 12px;
+}
+
+/* Responsive display controls */
+.desktop-only {
+  display: block;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .about-item {
+    flex-direction: column;
+  }
+
+  .item-icon {
+    margin-bottom: 5px;
+  }
 }
 
 .section-header {
@@ -412,3 +514,4 @@ body {
   font-size: 0.75rem;
   margin-top: 0.5rem;
 }
+
