@@ -150,7 +150,7 @@ function openFullSizeImage(screenshots, index) {
     // Only handle keys if the viewer is open
     if (!document.querySelector('.dos-viewer')) return;
 
-    switch(e.key) {
+    switch (e.key) {
       case 'Escape':
         closeViewer();
         e.stopPropagation(); // Prevent event from bubbling up to modal
@@ -165,6 +165,13 @@ function openFullSizeImage(screenshots, index) {
   }
 
   document.addEventListener('keydown', handleKeyDown);
+
+  // Mobile swipe navigation
+
+  const mc = new Hammer.Manager(document.querySelector('.dos-viewer-body'));
+  mc.add(new Hammer.Swipe());
+  mc.on('swipeleft', () => navigateViewer(-1));
+  mc.on('swiperight', () => navigateViewer(1));
 
   // Navigation function
   function navigateViewer(direction) {
