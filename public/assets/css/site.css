@@ -183,12 +183,26 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.5rem;
 }
 .project-title {
   color: #ffffff;
   font-weight: bold;
-  margin-bottom: 5px;
   font-size: 1.5rem;
+  margin-left: -6px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .project-title-container {
+    flex-direction: column;
+    align-items: start;
+    .project-title {
+      margin-bottom: 0.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
 }
 
 .section-header h2 {
