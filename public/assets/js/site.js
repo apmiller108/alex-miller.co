@@ -6,6 +6,21 @@ function ready (callback) {
   };
 };
 
+async function getCurrentYear() {
+  try {
+    const response = await fetch('https://worldtimeapi.org/api/timezone/America/New_York');
+    if (!response.ok) {
+      console.warn('Unable to retrieve current year from worldtimeapi')
+    }
+    const data = await response.json();
+    const currentDateTime = new Date(data.datetime);
+    const currentYear = currentDateTime.getFullYear();
+    return currentYear;
+  } catch (error) {
+    console.error('Error parsing date from worldtimeapi:', error);
+  }
+}
+
 function renderProject(name, data) {
   const modalTitle = document.getElementById('modal-title');
   const modalDescription = document.getElementById('modal-description');
@@ -207,6 +222,13 @@ ready(async function() {
   // See https://github.com/kristopolous/BOOTSTRA.386
   _386 = { fastLoad: true };
 
+  getCurrentYear().then((year) => {
+    if (year) {
+      document.getElementById('copyright-year').textContent = year
+    }
+  });
+
+  // Fetch project data
   const data = await fetch('/assets/js/data.json')
         .then(response => response.json())
         .catch(error => console.error('Error fetching data:', error));
