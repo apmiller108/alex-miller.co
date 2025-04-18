@@ -32,7 +32,7 @@
       },
       {
         "path": "assets/images/tmp/tmp-related-chat_2025-04-14.webp",
-        "caption": "Quickly view previous chats related to the current one"
+        "caption": "Link ideas by quickly referencing previous chats related to the current one"
       },
       {
         "path": "assets/images/tmp/tmp-search_2025-04-14.webp",
@@ -51,8 +51,9 @@
         "Dual-Mode Operation": "Functions with Mixxx or as a standalone master MIDI clock generator"
       },
       "Technical Details": {
-        "Multiple Outputs": "Sends MIDI clock over both USB and 5-pin DIN connections simultaneously",
-        "Microcontroller": "Build for boards based on the ATmega32u4"
+        "Microcontroller": "Build for boards based on the ATmega32u4",
+        "Hardware timer interrupts": "Reliable steady clock",
+        "Multiple Outputs": "Sends MIDI clock over both USB and 5-pin DIN connections simultaneously"
       }
     },
     "screenshots": [

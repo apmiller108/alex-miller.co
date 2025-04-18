@@ -45,6 +45,8 @@ body {
   font-size: 0.5em;
   line-height: 1;
   text-align: center;
+  background: none;
+  color: #fff;
 }
 
 /* Terminal styling */
@@ -97,7 +99,7 @@ body {
 }
 
 .projects-card.terminal-card::before {
-  content: "PROJECTS"
+  content: "PROJECT DATA"
 }
 
 /* About list styling */
@@ -116,17 +118,21 @@ body {
 .status-bar {
   color: #ffffff;
   font-size: 0.75rem;
-}
-
-span.complete {
-  color: #fff;
-  background: grey;
-  padding: 0.25rem;
-}
-span.active {
-  color: #fff;
-  background: green;
-  padding: 0.25rem;
+  span {
+    display: inline-block;
+    min-width: 4rem;
+    text-align: center;
+  }
+  .complete {
+    color: #fff;
+    background: grey;
+    padding: 0.25rem;
+  }
+  .active {
+    color: #fff;
+    background: green;
+    padding: 0.25rem;
+  }
 }
 
 /* Responsive display controls */
@@ -176,11 +182,13 @@ span.active {
 .project-title-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .project-title {
   color: #ffffff;
   font-weight: bold;
   margin-bottom: 5px;
+  font-size: 1.5rem;
 }
 
 .section-header h2 {
@@ -195,6 +203,9 @@ span.active {
 .project-desc {
   color: #aaaaaa;
   margin-bottom: 5px;
+  p, mark {
+    color: #fff;
+  }
 }
 
 .project-links {
@@ -277,11 +288,6 @@ span.active {
   background-color: #55ffff;
 }
 
-.screenshot-container {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
 #modal-image {
   max-width: 100%;
   border: 1px solid #55ffff;
@@ -355,6 +361,11 @@ span.active {
   margin-top: 2rem;
 }
 
+.screenshot-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
 .screenshot-figure {
   margin: 0;
   border: 1px solid #55ffff;
@@ -372,13 +383,9 @@ span.active {
   box-shadow: 0 0 15px rgba(85, 255, 255, 0.5);
 }
 
-
-/* Make images cursor indicate they're clickable */
-.screenshot-img {
-}
-
 .screenshot-img {
   width: 100%;
+  height: 100%;
   display: block;
   opacity: 0;
   transition: opacity 0.5s ease;
