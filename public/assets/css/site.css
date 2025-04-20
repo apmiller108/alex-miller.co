@@ -262,7 +262,6 @@ body {
   color: #000080;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .modal-header h3 {
