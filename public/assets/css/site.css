@@ -262,6 +262,7 @@ body {
   color: #000080;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .modal-header h3 {
@@ -272,6 +273,9 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .close-modal {
